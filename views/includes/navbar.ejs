@@ -1,0 +1,56 @@
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body " data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+
+<nav class="bg-zinc-800 p-2">
+  <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <a href="/books" class=" text-2xl font-bold text-blue-600 heading">MyBook.com</a>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex space-x-4 nav-part1">
+          <a href="/books" class="text-white hover:bg-blue-600 font-bold px-3 py-2 rounded tag">Home</a>
+          <a href="/" class="text-white hover:bg-blue-600 font-bold px-3 py-2 rounded tag">About</a>
+          <a href="#" class="text-white hover:bg-blue-600 font-bold px-3 py-2 rounded tag">Services</a>
+          <a href="/profile" class="text-white hover:bg-blue-600 font-bold px-3 py-2 rounded tag">Profile</a>
+          <a href="/logout" class="text-white hover:bg-red-600 font-bold px-3 py-2 rounded tag">Logout</a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+      </button>
+  </div>
+  
+  <!-- Mobile Menu -->
+  <div id="menu" class="lg:hidden hidden absolute top-12 left-0 w-full bg-zinc-800">
+      <a href="#" class="block text-white hover:bg-blue-600 px-3 font-bold py-2">Home</a>
+      <a href="#" class="block text-white hover:bg-blue-600 px-3 font-bold py-2">About</a>
+      <a href="#" class="block text-white hover:bg-blue-600 px-3 font-bold py-2">Services</a>
+      <a href="#" class="block text-white hover:bg-blue-600 px-3 font-bold py-2">Contact</a>
+  </div>
+</nav>

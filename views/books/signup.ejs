@@ -1,0 +1,41 @@
+<% layout("/layouts/biolerplate.ejs") %>
+
+<body >
+  
+ <div class="w-full h-screen bg-zinc-900 flex flex-col justify-center	 items-center gap-10 p-5 sm:p-1">
+  <h1 class="text-centre text-blue-500 font-bold text-2xl tracking-tighter sm:text-4xl  ">Signup to MyBook.com</h1>
+  <form class="bg-zinc-900 flex flex-col justify-center	 items-center gap-10 p-5 sm:p-1" action="/signup" method="post">
+  <div class="flex gap-5 justify-center	 items-center">
+    
+    <label class="text-white mx-2 text-centre  font-semibold " for="username">Username</label>
+    <input class=" outline-none rounded-lg bg-zinc-600 text-white px-3 py-1" type="text" name="username" id="username" placeholder="Enter username" required>
+
+  </div>
+
+  <div  class="flex gap-5 justify-center	 items-center">
+
+    <label class="text-white mx-2 font-semibold mx-4" for="email">Email </label>
+    <input class=" outline-none rounded-lg bg-zinc-600 text-white px-3 py-1 mx-1" type="email" name="email" id="email" placeholder="Enter email" required>
+  </div>
+
+  <div  class="flex gap-5 justify-center	 items-center">
+    
+      <label class="text-white mx-2 font-semibold " for="password">Password</label>
+      <input class=" outline-none rounded-lg bg-zinc-600 text-white px-3 py-1" type="password" name="password" id="password" placeholder="Enter password" required>
+
+  </div>
+
+  <div  class="flex gap-5 justify-center	 items-center">
+    
+    <label class="text-white mx-4 font-semibold " for="image">Image</label>
+    <input class=" outline-none rounded-lg bg-zinc-600 text-white px-3 py-1" type="url" name="image" id="image" placeholder="Enter Image url" required>
+
+</div>
+
+
+  
+    <button class="px-3 py-1 rounded-lg bg-blue-500 text-white font-semibold" type="submit">Signup</button>
+  </form>
+  <a class="text-sm text-blue-500 underline" href="http://localhost:8000/login">Login?</a>
+ </div>
+</body>
